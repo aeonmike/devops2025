@@ -7,7 +7,7 @@ pipeline {
 
   environment {
     DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-    DOCKER_REPO = 'mikejc30/devops2025'
+    DOCKER_REPO = 'mikecabalin09/mikejc30'
     CONTAINER_NAME = 'webapp-container'
   }
 
