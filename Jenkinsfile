@@ -16,7 +16,7 @@ pipeline {
       steps {
         script {
           // Use build number or date to generate tag
-          env.IMAGE_TAG = "build-${env.BUILD_NUMBER}"
+          env.IMAGE_TAG = "version-${env.BUILD_NUMBER}"
           env.IMAGE_NAME = "${env.DOCKER_REPO}:${env.IMAGE_TAG}"
         }
       }
