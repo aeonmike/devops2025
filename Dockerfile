@@ -11,7 +11,7 @@ COPY default /etc/nginx/sites-available/default
 COPY finexo-html/. /usr/share/nginx/html
 
 # Expose the port for access
-EXPOSE 80/tcp
+EXPOSE 8086/tcp
 
 # Run the Nginx server
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
