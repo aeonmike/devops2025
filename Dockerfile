@@ -1,5 +1,5 @@
 # Use Ubuntu 20.04 as the base image
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 # Install OpenJDK and other dependencies
 RUN apt-get update && \
