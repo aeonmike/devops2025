@@ -46,7 +46,7 @@ pipeline {
           sh """
             docker rm -f $CONTAINER_NAME || true
             docker pull $IMAGE_NAME
-            docker run -d --name $CONTAINER_NAME -p 80:80 $IMAGE_NAME
+            docker run -d --name $CONTAINER_NAME -p 8086:80 $IMAGE_NAME
           """
         }
       }
